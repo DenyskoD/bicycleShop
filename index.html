@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+
+        <!-- SVG -->
+        <svg style="display:none;">
+            <symbol id="twitter" viewBox="0 0 512 512">
+                <g>
+                    <path style="fill: #1DA1F2;" d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm116.886719 199.601562c.113281 2.519532.167969 5.050782.167969 7.59375 0 77.644532-59.101563 167.179688-167.183594 167.183594h.003906-.003906c-33.183594 0-64.0625-9.726562-90.066406-26.394531 4.597656.542969 9.277343.8125 14.015624.8125 27.53125 0 52.867188-9.390625 72.980469-25.152344-25.722656-.476562-47.410156-17.464843-54.894531-40.8125 3.582031.6875 7.265625 1.0625 11.042969 1.0625 5.363281 0 10.558593-.722656 15.496093-2.070312-26.886718-5.382813-47.140624-29.144531-47.140624-57.597657 0-.265624 0-.503906.007812-.75 7.917969 4.402344 16.972656 7.050782 26.613281 7.347657-15.777343-10.527344-26.148437-28.523438-26.148437-48.910157 0-10.765624 2.910156-20.851562 7.957031-29.535156 28.976563 35.554688 72.28125 58.9375 121.117187 61.394532-1.007812-4.304688-1.527343-8.789063-1.527343-13.398438 0-32.4375 26.316406-58.753906 58.765625-58.753906 16.902344 0 32.167968 7.144531 42.890625 18.566406 13.386719-2.640625 25.957031-7.53125 37.3125-14.261719-4.394531 13.714844-13.707031 25.222657-25.839844 32.5 11.886719-1.421875 23.214844-4.574219 33.742187-9.253906-7.863281 11.785156-17.835937 22.136719-29.308593 30.429687zm0 0"/>
+                </g>
+            </symbol>
+            <symbol id="facebook" viewBox="0 0 112.196 112.196">
+                <g>
+                    <circle style="fill:#3B5998;" cx="56.098" cy="56.098" r="56.098"/>
+                    <path style="fill:#FFFFFF;" d="M70.201,58.294h-10.01v36.672H45.025V58.294h-7.213V45.406h7.213v-8.34
+                        c0-5.964,2.833-15.303,15.301-15.303L71.56,21.81v12.51h-8.151c-1.337,0-3.217,0.668-3.217,3.513v7.585h11.334L70.201,58.294z"/>
+                </g>
+            </symbol>
+            <symbol id="pint" viewBox="0 0 97.75 97.75">
+                <g>
+                    <path style="fill: #bd081c;" d="M48.875,0C21.883,0,0,21.882,0,48.875S21.883,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.867,0,48.875,0z
+                    M54.499,65.109c-4.521,0-8.773-2.444-10.229-5.219c0,0-2.432,9.645-2.943,11.506c-1.813,6.58-7.146,13.162-7.561,13.701
+                    c-0.289,0.375-0.928,0.258-0.994-0.24c-0.113-0.838-1.475-9.139,0.127-15.909c0.801-3.4,5.383-22.814,5.383-22.814
+                    s-1.334-2.673-1.334-6.625c0-6.205,3.596-10.837,8.074-10.837c3.807,0,5.645,2.859,5.645,6.286c0,3.828-2.436,9.552-3.693,14.856
+                    c-1.051,4.441,2.225,8.064,6.605,8.064c7.933,0,13.272-10.188,13.272-22.261c0-9.174-6.176-16.044-17.418-16.044
+                    c-12.697,0-20.615,9.471-20.615,20.052c0,3.646,1.078,6.221,2.764,8.21c0.773,0.915,0.883,1.283,0.602,2.333
+                    c-0.203,0.771-0.66,2.625-0.854,3.358c-0.279,1.062-1.137,1.44-2.098,1.049c-5.846-2.387-8.572-8.793-8.572-15.994
+                    c0-11.893,10.029-26.154,29.922-26.154c15.985,0,26.506,11.566,26.506,23.984C77.089,52.839,67.956,65.109,54.499,65.109z"/>
+                </g>
+            </symbol>
+        </svg>
+
+        <!-- header -->
+        <header class="header" id="header">
+            <nav class="nav" id="nav">
+                <a href="#" class="nav__link" data-scroll="#generation">about us</a>
+                <a href="#" class="nav__link" data-scroll="#brands">work</a>
+                <a href="#" class="nav__link" data-scroll="#shop">shop</a>
+                <a href="#" class="nav__link" data-scroll="#contact">contact</a>
+            </nav>
+            <a class="home__link" href="#"> <img class="header__logo" src="assets/img/Logo.png" alt="logo" data-scroll="#intro"></a>
+            <button class="burger" type="button" id="navToggle">
+                <span class="burger__item">Burger Menu</span>  
+            </button>
+        </header> <!-- /header -->
+
+        <!-- intro (( background )) -->
+        <section class="intro" id="intro">
+            <h2 class="visually-hidden">section</h2>
+        </section> <!-- /intro -->
+
+
+        <section class="section generation" id="generation">
+            <div class="container">
+                <div class="section__icon">
+                    <img src="assets/img/section-icons/icon1.png" alt="generation icon">
+                </div>
+                <h2 class="section__title">A NEW GENERATION OF VINTAGE BIKE</h2>
+                <p class="section__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
+        </section>
+
+
+        <section class="section brands" id="brands">
+            <!-- first row -->
+            <div class="brands-row">
+                <div class="brands-col col--large first">
+                    <div class="col__img large">
+                        <img class="brands__img" src="assets/img/brands-img/1.jpg" alt="">
+                        <a href="">
+                            <img class="brands__logo" src="assets/img/brands/brand1.png" alt="">
+                        </a>
+                    </div>   
+                </div>
+                <div class="brands-col col--small text">
+                    <div class="container container--small ">
+                        <div class="section__icon">
+                            <img src="assets/img/section-icons/icon2.png" alt="generation icon">
+                        </div>
+                        <h2 class="section__title">Vintage Oliva</h2>
+                        <p class="section__text section--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    </div>
+                    <div class="col__img img--small">
+                        <img class="brands__img" src="assets/img/brands-img/2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- second row -->
+            <div class="brands-row">
+                <div class="brands-col col--small text">
+                    <div class="container container--small ">
+                        <div class="section__icon">
+                            <img src="assets/img/section-icons/icon3.png" alt="generation icon">
+                        </div>
+                        <h2 class="section__title">La Boriosa</h2>
+                        <p class="section__text section--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    </div>
+                    <div class="col__img img--small">
+                        <img class="brands__img" src="assets/img/brands-img/3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="brands-col col--large second">
+                    <div class="col__img large">
+                        <img class="brands__img" src="assets/img/brands-img/4.jpg" alt="">
+                        <a href="">
+                            <img class="brands__logo" src="assets/img/brands/brand2.png" alt="">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- third row -->
+            <div class="brands-row">
+                <div class="brands-col col--small first">
+                    <div class="col__img">
+                        <img class="brands__img" src="assets/img/brands-img/5.jpg" alt="">
+                        <a href="">
+                            <img class="brands__logo" src="assets/img/brands/brand3.png" alt="">
+                        </a>
+                    </div>
+                   
+                </div>
+
+                <div class="brands-col col--small text">
+                    <div class="container container--small ">
+                        <div class="section__icon">
+                            <img src="assets/img/section-icons/icon4.png" alt="generation icon">
+                        </div>
+                        <h2 class="section__title">Retro Bike - M. Hulot</h2>
+                        <p class="section__text section--small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                    </div>
+                    <div class="col__img img--small">
+                        <img class="brands__img" src="assets/img/brands-img/6.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="brands-col col--small second">
+                    <div class="col__img">
+                        <img class="brands__img" src="assets/img/brands-img/7.jpg" alt="">
+                    </div>
+                </div>
+
+            </div> <!-- brands row-->
+        </section> <!-- /brands -->
+
+
+        <section class="section reviews">
+            <div class="container">
+                <div id="reviewsSlider">
+                    <div class="reviews__item-wrap">
+                        <div class="reviews__item">
+                            <div class="reviews__icon">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="32px" height="27px">
+                                    <image  x="0px" y="0px" width="32px" height="27px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAMAAAAqGX2oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTVBMVEVWx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+7///9dPdZmAAAAbXRSTlMAI111YiQLAy+6tR0UcyVwolj34LT5tqUGPMwRDdG/GAHziq+ZwedMNcgPlF+rCUL+t1tmDMv6x49shDD1AqyWqu+jVATOUCHeEpwfVfwoHoDjkj9AZMVrS9X0URBDhttJzezmheVjB9n26Z4gVJVyNgAAAAFiS0dEbiIPURcAAAAHdElNRQfkBx4JGCz89cC9AAABKUlEQVQoz2NgwAIYmZhZWOE8NnY0aQ7OXBDg4mZg4OHlY2DgF0BVISiUCwHCvCKiIkABsVxxCSR5SdFcBJCSlmFgkM3NlZOHyyvIIskrKimrMDCoAllq6jAFGrkoQFOLgUEbzFLmgCjQQZHX1QMK6UPYBoZGQPsYjFEUmIBtNYVxzcwtLK1QFGiBTbW2ycUFbEHydvYOuOQdwQY44dSfKwVW4IxbgT1YgYsrTgVuEK+7e+CQVzSBhp6nlxlWBSqw4PX2YVbEIu/rB1PgT8AABoYAbPKBWggFtkGY8qLBKMkohAstvA1C0ROqSRiKfDiatEJEJLJ8VDSKbExsXDyK+Zp+SLIJiUlozktmsUXRz5OSimy5Zlo6RkZilwwQyVDMzczSzA7NQZcEAJoO16Q2ibtYAAAAAElFTkSuQmCC" />
+                                </svg>
+                            </div>
+                            <div class="reviews__author">AOD New York<span class="author__name">@aod</span> <span class="reviews__time">/ 35 min</span></div>
+                            <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</p>
+                        </div>
+                    </div>
+                    <div class="reviews__item-wrap">
+                        <div class="reviews__item">
+                            <div class="reviews__icon">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="32px" height="27px">
+                                    <image  x="0px" y="0px" width="32px" height="27px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAMAAAAqGX2oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTVBMVEVWx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+7///9dPdZmAAAAbXRSTlMAI111YiQLAy+6tR0UcyVwolj34LT5tqUGPMwRDdG/GAHziq+ZwedMNcgPlF+rCUL+t1tmDMv6x49shDD1AqyWqu+jVATOUCHeEpwfVfwoHoDjkj9AZMVrS9X0URBDhttJzezmheVjB9n26Z4gVJVyNgAAAAFiS0dEbiIPURcAAAAHdElNRQfkBx4JGCz89cC9AAABKUlEQVQoz2NgwAIYmZhZWOE8NnY0aQ7OXBDg4mZg4OHlY2DgF0BVISiUCwHCvCKiIkABsVxxCSR5SdFcBJCSlmFgkM3NlZOHyyvIIskrKimrMDCoAllq6jAFGrkoQFOLgUEbzFLmgCjQQZHX1QMK6UPYBoZGQPsYjFEUmIBtNYVxzcwtLK1QFGiBTbW2ycUFbEHydvYOuOQdwQY44dSfKwVW4IxbgT1YgYsrTgVuEK+7e+CQVzSBhp6nlxlWBSqw4PX2YVbEIu/rB1PgT8AABoYAbPKBWggFtkGY8qLBKMkohAstvA1C0ROqSRiKfDiatEJEJLJ8VDSKbExsXDyK+Zp+SLIJiUlozktmsUXRz5OSimy5Zlo6RkZilwwQyVDMzczSzA7NQZcEAJoO16Q2ibtYAAAAAElFTkSuQmCC" />
+                                </svg>
+                            </div>
+                            <div class="reviews__author">AOD New York<span class="author__name">@frank</span> <span class="reviews__time">/ 45 min</span></div>
+                            <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis.</p>
+                        </div>
+                    </div>
+
+                    <div class="reviews__item-wrap">
+                        <div class="reviews__item">
+                            <div class="reviews__icon">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="32px" height="27px">
+                                    <image  x="0px" y="0px" width="32px" height="27px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAMAAAAqGX2oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTVBMVEVWx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+7///9dPdZmAAAAbXRSTlMAI111YiQLAy+6tR0UcyVwolj34LT5tqUGPMwRDdG/GAHziq+ZwedMNcgPlF+rCUL+t1tmDMv6x49shDD1AqyWqu+jVATOUCHeEpwfVfwoHoDjkj9AZMVrS9X0URBDhttJzezmheVjB9n26Z4gVJVyNgAAAAFiS0dEbiIPURcAAAAHdElNRQfkBx4JGCz89cC9AAABKUlEQVQoz2NgwAIYmZhZWOE8NnY0aQ7OXBDg4mZg4OHlY2DgF0BVISiUCwHCvCKiIkABsVxxCSR5SdFcBJCSlmFgkM3NlZOHyyvIIskrKimrMDCoAllq6jAFGrkoQFOLgUEbzFLmgCjQQZHX1QMK6UPYBoZGQPsYjFEUmIBtNYVxzcwtLK1QFGiBTbW2ycUFbEHydvYOuOQdwQY44dSfKwVW4IxbgT1YgYsrTgVuEK+7e+CQVzSBhp6nlxlWBSqw4PX2YVbEIu/rB1PgT8AABoYAbPKBWggFtkGY8qLBKMkohAstvA1C0ROqSRiKfDiatEJEJLJ8VDSKbExsXDyK+Zp+SLIJiUlozktmsUXRz5OSimy5Zlo6RkZilwwQyVDMzczSzA7NQZcEAJoO16Q2ibtYAAAAAElFTkSuQmCC" />
+                                </svg>
+                            </div>
+                            <div class="reviews__author">AOD Konstantunovka<span class="author__name">@alexey</span> <span class="reviews__time">/ 49 min</span></div>
+                            <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla  </p>
+                        </div>
+                    </div>
+
+                    <div class="reviews__item-wrap">
+                        <div class="reviews__item">
+                            <div class="reviews__icon">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="32px" height="27px">
+                                    <image  x="0px" y="0px" width="32px" height="27px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAbCAMAAAAqGX2oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTVBMVEVWx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+5Wx+7///9dPdZmAAAAbXRSTlMAI111YiQLAy+6tR0UcyVwolj34LT5tqUGPMwRDdG/GAHziq+ZwedMNcgPlF+rCUL+t1tmDMv6x49shDD1AqyWqu+jVATOUCHeEpwfVfwoHoDjkj9AZMVrS9X0URBDhttJzezmheVjB9n26Z4gVJVyNgAAAAFiS0dEbiIPURcAAAAHdElNRQfkBx4JGCz89cC9AAABKUlEQVQoz2NgwAIYmZhZWOE8NnY0aQ7OXBDg4mZg4OHlY2DgF0BVISiUCwHCvCKiIkABsVxxCSR5SdFcBJCSlmFgkM3NlZOHyyvIIskrKimrMDCoAllq6jAFGrkoQFOLgUEbzFLmgCjQQZHX1QMK6UPYBoZGQPsYjFEUmIBtNYVxzcwtLK1QFGiBTbW2ycUFbEHydvYOuOQdwQY44dSfKwVW4IxbgT1YgYsrTgVuEK+7e+CQVzSBhp6nlxlWBSqw4PX2YVbEIu/rB1PgT8AABoYAbPKBWggFtkGY8qLBKMkohAstvA1C0ROqSRiKfDiatEJEJLJ8VDSKbExsXDyK+Zp+SLIJiUlozktmsUXRz5OSimy5Zlo6RkZilwwQyVDMzczSzA7NQZcEAJoO16Q2ibtYAAAAAElFTkSuQmCC" />
+                                </svg>
+                            </div>
+                            <div class="reviews__author">AOD Novuy Bug<span class="author__name">@anime</span> <span class="reviews__time">/ 54 min</span></div>
+                            <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section shop" id="shop">
+        <!-- first col -->
+            <div class="shop__cols">
+                <div class="shop__col">
+                    <div class="shop__row">
+                        <div class="shop__item small">
+                            <img class="shop__img" src="assets/img/shop/1.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                        <div class="shop__item small">
+                            <img class="shop__img" src="assets/img/shop/2.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                    </div>
+                    <div class="shop__row">
+                        <div class="shop__item long">
+                            <img class="shop__img" src="assets/img/shop/3.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                    </div>
+                </div>     
+                <!-- second col -->       
+
+                <div class="shop__col hight--items">
+                        <div class="shop__item hight">
+                            <img class="shop__img" src="assets/img/shop/4.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                    
+                        <div class="shop__item hight">
+                            <img class="shop__img" src="assets/img/shop/5.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                </div> 
+                <!-- third col -->        
+
+                <div class="shop__col">
+                    <div class="shop__row">
+                        <div class="shop__item long">
+                            <img class="shop__img" src="assets/img/shop/6.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                    </div>
+                    <div class="shop__row">
+                        <div class="shop__item small">
+                            <img class="shop__img" src="assets/img/shop/7.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                        <div class="shop__item small">
+                            <img class="shop__img" src="assets/img/shop/8.jpg" alt="">
+                            <a href="#" class="shop__link">
+                                <img class="shop__icon" src="assets/img/shop-icon.png" alt="">
+                                <p class="shop__desc">Shop Now</p>
+                            </a>  
+                        </div>
+                    </div>
+                </div> 
+            </div>    
+            <div class="shop__store">
+                <a class="store__link" href="#">Discover the shop</a>
+            </div>          
+        </section>
+
+        <!-- contacts -->
+        <section class="section contact" id="contact">
+            <div class="container .container--small">
+                <img src="assets/img/Logo.png" alt="" class="contact__logo">
+                <h3 class="contact__title">
+                    Stay on the saddle!
+                </h3>
+                <form class="contact__form" >
+                    <input class="contact__input" type="text" placeholder="enter your email...">
+                    <button class="contact__button" >Go</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__contacts">
+                        <div class="contacts__city">
+                            AOD New York
+                        </div>
+                        <address class="contacts__adress">
+                            2250 Lexington Avenue 
+                        </address>
+                        <div class="contacts__mailbox">
+                            New York, NY 10035  - <i>info@domain.com</i>
+                        </div>
+                    </div>
+                    <div class="footer__social">
+                        <a href="#" class="social__item" target="_black">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item" target="_black">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__item" target="_black">
+                            <svg class="social__icon">
+                                <use xlink:href="#pint"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <copyright class="footer__copyright">
+                        <i>Handcrafted by</i> <img class="copyright__img" src="assets/img/copyright.png" alt="">
+                    </copyright>
+                </div>
+            </div>
+        </footer>
+                              
+
+
+
+
+
+
+        <!-- JS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
