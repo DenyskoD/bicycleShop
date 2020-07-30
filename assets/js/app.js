@@ -42,6 +42,7 @@ $(function() {
         let elementsOffset = $(elementID).offset().top;
     
         nav.removeClass("show");
+        header.removeClass("mobile");
     
         $("html, body").animate({
         scrollTop: elementsOffset - 95
